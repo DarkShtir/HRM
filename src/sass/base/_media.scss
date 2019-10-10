@@ -2,17 +2,24 @@
     .container {
         max-width: 80vw;
     }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
 }
 
 
 @media (max-width: 991px) {
     .carousel {
         &__inner {
+            max-width: 100%;
             img {
                 max-width: 100%;
             }
         }
     }
+
 }
 
 @media (max-width: 767px) {
@@ -56,9 +63,22 @@
     .title_left {
         font-size: 30px;
     }
-    .carousel {
-        button {
-            display: none;
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            margin: 5px; 
+        }
+        &__tab {
+            margin: 5px; 
+        }
+    }
+    .feed {
+        &__img {
+            width: 30%;
+            height: 30%;
+        }
+        &__text {
+            padding-left: 20px;
         }
     }
 }
@@ -100,6 +120,32 @@
         }
         &__item {
             min-width: 90%;
+        }
+    }
+    .catalog {
+        padding-bottom: 20px;
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+        }
+        &__img {
+            width: 169px;
+            height: 169px;
+            margin: 0 auto;
+        }
+        .title {
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            margin-top: 10px;
+            text-align: center;
+        }
+        &__count {
+            text-align: center;
+        }
+        &__text {
+            padding: 0 10px;
         }
     }
 }
@@ -150,7 +196,6 @@
         &__subheader {
             font-size: 14px; 
         }
-    
     }
     .advantages {
         padding: 50px 0 60px 0;
