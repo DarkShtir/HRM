@@ -23,6 +23,11 @@
 }
 
 @media (max-width: 767px) {
+    .button {
+        &:hover {
+            box-shadow: none;
+        }
+    }
     .promo {
         &__header {
             font-size: 38px;
@@ -79,6 +84,14 @@
         }
         &__text {
             padding-left: 20px;
+        }
+    }
+    .footer {
+        &__social-item {
+            &:hover {
+                text-shadow: none;
+                box-shadow: none;
+            }
         }
     }
 }
@@ -146,6 +159,15 @@
         }
         &__text {
             padding: 0 10px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 90%;
+            padding: 30px 38px 30px 48px;
+        }
+        &__social-item {
+            margin: 0 10px;
         }
     }
 }
@@ -217,6 +239,21 @@
         }
         .feed-form {
             max-width: 100%;
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+            padding: 20px 38px 30px 38px;
+        }
+        &__addr {
+            margin-bottom: 30px;
+        }
+        &__phone {
+            margin-bottom: 24px;
+        }
+        &__social-item {
+            margin: 0 5px;
         }
     }
 }
