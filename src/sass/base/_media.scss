@@ -170,6 +170,16 @@
             margin: 0 10px;
         }
     }
+    .modal {
+        width: 100%;
+        &__close {
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .feed-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -255,5 +265,8 @@
         &__social-item {
             margin: 0 5px;
         }
+    }
+    .modal {
+        padding: 40px 5px 40px 5px;
     }
 }
